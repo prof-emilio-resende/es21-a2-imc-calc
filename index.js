@@ -78,8 +78,8 @@ Dietician.prototype = Object.create(Person.prototype);
 Dietician.prototype.constructor = Dietician;
 
 function buildCalculateImc() {
-    var heightElement = document.getElementById("altura");
-    var weightElement = document.getElementById("peso");
+    var heightElement = document.getElementById("Altura");
+    var weightElement = document.getElementById("Peso");
     var dietician = new Dietician(0.0, 0.0);
 
     return function () {
@@ -91,7 +91,7 @@ function buildCalculateImc() {
             parseFloat(dietician.imc).toFixed(2) +
                 " " +
                 translateImc(dietician.imc),
-            document.getElementById("imc")
+            document.getElementById("IMC")
         );
     };
 }
